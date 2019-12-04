@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <link href="/index.css" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap&subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/1b96597ac5.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .bg-image {
+    /* The image used */
+    background-image:url("https://images.unsplash.com/photo-1496917756835-20cb06e75b4e?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ");
+    
+    /* Add the blur effect */
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+    
+    /* Full height */
+    height: 100%; 
+    
+    /* Center and scale the image nicely */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* Position text in the middle of the page/image */
+  .avatardiv{
+    position: absolute;
+      top: 20px;
+      left: 42%;
+}
+    .avatar{
+        width:25%;
+        border-radius: 50%;
+    }
+    
+  .content{
+      color:#FFFFFF;
+      font-size:25px;
+      font-family: 'Righteous', cursive;
+      border: 0px solid #f1f1f1;
+      position: absolute;
+      top: 43%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 80%;
+      padding: 15px;
+      text-align: center;
+      background-color: rgba(0,0,0, 0.2);
+      border-radius:25px;
+    }
+    
+    .sub-content{
+      color:#000000;
+      font-size:30px;
+      font-family: 'Yanone Kaffeesatz', sans-serif;
+      border: 0px solid #f1f1f1;
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 55%;
+      padding: 20px;
+      text-align: center;
+      
+      border-radius:10px;
+    }
+    
+    .social{
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      font-size:70px;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 55%;
+      padding: 20px;
+      text-align: center;
+    }
+    /*responsive for media queries*/
+    @media screen and (max-width:1043px){
+        .sub-content{
+            font-size: 28px;
+        }
+    }
+    @media screen and (max-width:974px){
+        .content{
+            top:30%;
+        }
+      .sub-content{
+          top:60%;
+          font-size: 26px;
+      }
+      .social{
+          font-size: 60px;
+      }
+    }
+    @media screen and (max-width:770px){
+        .content{
+            font-size: 20px;
+            padding: 10px;
+            top:30%;
+        }
+        .sub-content{
+            top: 65%;
+            width:85%;
+        }
+        .social{
+            width:80%;
+            font-size: 40px;
+        }
+    }
+    @media screen and (max-width:560px){
+        .content{
+            top:30%;
+            font-size: 20px;
+            padding: 10px;
+        }
+        .sub-content{
+            width:85%;
+            top:65%;
+            font-size: 23px;
+        }
+        .social{
+            font-size: 38px;
+        }
+    }
+    @media screen and (max-width:447px){
+        .content{
+            top:25%;
+            font-size: 16px;
+            padding: 8px;
+        }
+        .sub-content{
+            width:75%;
+            top:60%;
+            font-size: 20px;
+        }
+        .social{
+            font-size: 38px;
+            top:90%;
+            width: 80%;
+        }
+    }
+    @media screen and (max-width:380px){
+        .content{
+            top:25%;
+            font-size: 18px;
+            padding: 8px;
+        }
+        .sub-content{
+            width:75%;
+            top:60%;
+            font-size: 18px;
+        }
+        .social{
+            font-size: 33px;
+            top:90%;
+            width: 75%;
+        }
+    }
+    @media screen and (max-width:321px){
+        .content{
+            top:25%;
+            font-size: 15px;
+            padding: 5px;
+        }
+        .sub-content{
+            width:85%;
+            top:60%;
+            font-size: 17px;
+        }
+        .social{
+            font-size: 30px;
+            top:85%;
+            width: 80%;
+        }
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="bg-image"></div>
+<div class="avatardiv">
+        <img class="avatar" src="karthikdoll.jpeg" alt="Avatar">
+</div>
+  <div class="content">
+    <h1>Hello!</h1>
+    <p>I'm Karthik kumar an aspiring Web Developer </p></div>
+  <div class="sub-content">
+    <p></p></div>
+  <div class="social">
+   <a href="https://www.linkedin.com/in/karthik-kumar-selvam-aa288493/"> <i class="fab fa-linkedin" ></i></a>
+    <a href="https://github.com/karthikselva19"><i class="fab fa-github"></i></a>
+
+  </div>
+
+</body>
+</html>
